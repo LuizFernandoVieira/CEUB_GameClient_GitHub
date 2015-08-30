@@ -1,12 +1,13 @@
-package com.luiz.client.packets;
+package com.luiz.game.client.packets;
 
-import com.luiz.client.Client;
+import com.luiz.game.client.Client;
 
 public abstract class Packet {
 	public static enum PacketTypes {
 		INVALID(-1),
 		LOGIN(00),
 		DISCONNECT(01),
+		MOVE(02),
 		SERVEROFF(99);
 		
 		private int packetId;

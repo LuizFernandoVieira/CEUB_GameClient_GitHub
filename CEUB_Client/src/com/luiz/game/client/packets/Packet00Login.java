@@ -1,6 +1,6 @@
-package com.luiz.client.packets;
+package com.luiz.game.client.packets;
 
-import com.luiz.client.Client;
+import com.luiz.game.client.Client;
 
 public class Packet00Login extends Packet {
 	private String username;
@@ -16,7 +16,7 @@ public class Packet00Login extends Packet {
 	}
 
 	public void writeData(Client client) {
-		client.sendData(getData());
+		client.sendMessage(getData());
 	}
 
 	public byte[] getData() {
